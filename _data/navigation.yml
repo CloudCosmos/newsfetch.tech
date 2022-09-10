@@ -1,0 +1,11 @@
+main:
+  - title: "Quick-Start Guide"
+    url: /docs/
+  - title: "Blog"
+    url: /blog/
+  - title: "About"
+    url: /about/
+  - title: "GitHub/NewsFetch"
+    icon: "fab fa-fw fa-github"
+    url: https://github.com/cloudcosmos/newsfetch
+    _blank: true
