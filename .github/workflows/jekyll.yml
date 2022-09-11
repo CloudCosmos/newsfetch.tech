@@ -17,7 +17,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    # Specify the target branch (optional)
+    # Specifying the target branch is required for GitHub Pages to publish the site
     - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
