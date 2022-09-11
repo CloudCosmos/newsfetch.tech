@@ -1,11 +1,35 @@
 main:
   - title: "Quick-Start Guide"
-    url: /docs/
+    url: /docs/quick-start-guide/
   - title: "Blog"
-    url: /blog/
+    url: /building-news-apps-with-newsfetch/
   - title: "About"
     url: /about/
   - title: "github/newsfetch"
     icon: "fab fa-fw fa-github"
     url: https://github.com/newsfetch/newsfetch
     _blank: true
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+  - title: Enrichments
+    children:
+      - title: "Enrichments"
+        url: /docs/enrichments/
+      - title: "Spacy"
+        url: /docs/spacy/
+      - title: "HuggingFace Transformers"
+        url: /docs/hugging-face/
+  - title: API
+    children:
+      - title: "API"
+        url: /docs/api/
+  - title: Meta
+    children:
+      - title: "Contributing"
+        url: /docs/contributing/
+      - title: "License"
+        url: /docs/license/

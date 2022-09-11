@@ -6,7 +6,7 @@ header:
   overlay_image:
   actions:
     - label: "<i class='fas'></i> Try it out now!"
-      url: "/docs"
+      url: "/docs/quick-start-guide/"
 excerpt: >
   Access billions of News articles and tens of thousands of world-wide sources in multiple languages! <br/> <br/>
   Setup pipelines to fetch the latest News in near-real-time!!<br/> <br/>
@@ -16,14 +16,14 @@ feature_row:
     alt: "news extract"
     title: "News Extraction"
     excerpt: "News data from CommonCrawl is parsed and converted to a structured JSON format."
-    url: ""
+    url: "/docs/news-extraction/"
     btn_class: "btn--inverse"
     btn_label: "Learn more"
   - image_path:
     alt: "fully responsive"
     title: "Extensive Documentation"
     excerpt: "Blog posts, Sample code, Dockerfiles etc are available to get you started!"
-    url: "/docs/"
+    url: "/docs/quick-start-guide/"
     btn_class: "btn--inverse"
     btn_label: "Learn more"
   - image_path:
@@ -45,7 +45,7 @@ feature_row:
     alt: "rest news api"
     title: "RESTful News API"
     excerpt: "Fully functional API with basic functionality to store and serve parsed News JSON."
-    url: "/docs/api"
+    url: "/docs/api/"
     btn_class: "btn--inverse"
     btn_label: "Learn more"
   - image_path:

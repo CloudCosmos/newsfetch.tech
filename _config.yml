@@ -19,11 +19,11 @@ locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "CloudCosmos"
+name                     : "NewsFetch"
 description              : ""
 url                      : "https://newsfetch.tech"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "cloudcosmos/newsfetch"
+repository               : "newsfetch/newsfetch"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/newsfetch_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "CloudCosmos"
+  name             : "Manoj Bharadwaj"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : "CEO/CTO, CloudCosmos"
   location         : "Raleigh, NC, USA"
   email            :
   links:
@@ -115,19 +115,13 @@ author:
       url: "mailto:info@cloudcosmos.tech"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://cloudcosmos.tech"
+      url: "https://newsfetch.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/cloudcosmos"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/newsfetch/newsfetch"
 
 # Site Footer
 footer:
@@ -135,21 +129,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/cloudcosmos/newsfetch"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/newsfetch/newsfetch"
 
 
 # Reading Files
@@ -181,7 +163,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
+#  - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
@@ -276,6 +258,13 @@ compress_html:
     envs: development
 
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Defaults
 defaults:
   # _posts
@@ -284,8 +273,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
-      read_time: false
+      author_profile: true
+      read_time: true
       comments: false
       share: true
       related: true
@@ -296,3 +285,15 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"

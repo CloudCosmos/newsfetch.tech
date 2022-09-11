@@ -71,8 +71,5 @@ that harness News for insights and data.
 
 # CloudCosmos
 
-You can find the more information about CloudCosmos at [cloudcosmos-tech](https://cloudcosmos.tech/)
+You can find the more information about CloudCosmos at [https://cloudcosmos.tech/](https://cloudcosmos.tech/)
 
-
-[cloudcosmos-tech]: https://cloudcosmos.tech
-[newsfetch-github]: https://github.com/newsfetch

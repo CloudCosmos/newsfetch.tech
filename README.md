@@ -28,11 +28,11 @@ Add following to Gemfile
 
 `gem "github-pages", "~> VERSION", group: :jekyll_plugins`
 
-## Updating cloudcosmos.tech website
+## Updating newsfetch.tech website
 
 First get the latest version of the website
 
-`git clone git@github.com:CloudCosmos/newsfetch.tech.git`
+`git clone git@github.com:newsfetch/newsfetch.tech.git`
 
 
 The site is hosted with Github pages and will be updated automatically.
