@@ -15,10 +15,14 @@ docs:
     children:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
+  - title: News Extraction
+    children:
+      - title: "Extracting News From CommonCrawl"
+        url: /docs/extracting-news-commoncrawl/
   - title: Enrichments
     children:
-      - title: "Enrichments"
-        url: /docs/enrichments/
+      - title: "Enriching News Content"
+        url: /docs/enriching-news/
       - title: "Spacy"
         url: /docs/spacy/
       - title: "HuggingFace Transformers"
@@ -27,6 +31,10 @@ docs:
     children:
       - title: "API"
         url: /docs/api/
+  - title: Possibilities
+    children:
+      - title: "Ideas For Using NewsFetch"
+        url: /docs/app-ideas-newsfetch/
   - title: Meta
     children:
       - title: "Contributing"
