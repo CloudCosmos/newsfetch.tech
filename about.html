@@ -1,0 +1,295 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title></title>
+<meta name="description" content="About NewsFetch">
+
+
+  <meta name="author" content="Manoj Bharadwaj">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="https://newsfetch.tech/about">
+
+
+  <meta property="og:description" content="About NewsFetch">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://newsfetch.tech/about">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "NewsFetch",
+      "url": "https://newsfetch.tech/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.png" />
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/newsfetch_logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/building-news-apps-with-newsfetch/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/newsfetch/newsfetch">github/newsfetch</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #222222; background-image: url('');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          
+
+        
+      </h1>
+      
+        <p class="page__lead">About NewsFetch
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <meta itemprop="description" content="About NewsFetch">
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h1 id="why-newsfetch">Why NewsFetch?</h1>
+
+<p>CloudCosmos has been exploring News content for a while now! We have worked with clients in building large 
+scale search engines for News, setting up data ingestion pipelines to rapidly cosume massive volumes of News 
+for near-real-time needs of users, enriching News using various techniques and strategies (NLP, Machine Learning, 
+rule engines etc).</p>
+
+<p>NewsFetch provides a platform to explore News content in a structured and easy to use manner. It builds on the 
+data that CommonCrawl has made available to the public, and in particular the CC-NEWS dataset. CC-NEWS crawls generate
+about 10-15 archive files per day. Each archive has 20-25k documents (news articles) within it and these cover 
+multiple languages.</p>
+
+<h2 id="redactwiz">RedactWiz</h2>
+
+<p>One of the first products that CloudCosmos built was RedactWiz (not in production anymore).
+RedactWiz enabled AI power redaction to safeguard sensitive information from documents. It was a hosted 
+app that enabled documents in MS Word, PDF and a few image formats to be uploaded, with configuration choices 
+that further provided a capability for extracted textual content to be erased/redacted (blacked out in PDF 
+and images; replaced with constant length character strings in text etc) based on identified entities (NER) and 
+context around the entities (word span, sentences, paragraphs etc).</p>
+
+<p>RedactWiz was designed to run in air-gapped environments. The product hosted all the AI/ML models and the code 
+required for the features without needing to make any API calls to external vendor products or platforms.</p>
+
+<h2 id="textalytics"><a href="https://www.textalytics.tech/">Textalytics</a></h2>
+
+<p>An ask for the RedactWiz platform was capability to invoke the features via an API. Textalytics was built to 
+address this ask and offers features beyond just the redaction use-case.</p>
+
+<p>Textalytics offered features like Named Entity Recognition (NER), Entity Linking and Resolution (with WikiData), 
+Summarization etc via a standardized APIs. These APIs also have the glue to make them work with cloud offerings 
+with similar features. The focus with Textalytics was to showcase the capabilities that CloudCosmos team has with 
+building and hosting custom models: all the way from obtaining content, cleaning, tagging for specific use-cases, 
+training models for desired F1 scores and hosting it for inference.</p>
+
+<p>The core capabilities of Textalytics was extended to apply to open-source and cloud based NLP engines and all of 
+this was open-sourced as <a href="https://github.com/textalytics">Textalytics Open-Source</a></p>
+
+<h2 id="shukraai"><a href="https://www.shukra.ai/">ShukraAI</a></h2>
+
+<p>Shukra build upon Textalytics.</p>
+
+<p>Shukra, was a large repository of enrichments for content in open datasets. The dataset being enriched was 
+CC-NEWS (Common Crawl News).</p>
+
+<p>Shukra’s goal was to provide an opinionated set of enrichments (NER, Summarization, Zero-Shot Classification, 
+Sentiment Detection etc) from widely popular pre-trained models available from platforms like HuggingFace, Spacy, 
+Allen AI, Flair etc for every document in CC-NEWS. These enrichments were generated for all the historic content, 
+starting from about August 2016, when CC-NEWS started the News database, and keeping it as real-time as it was 
+feasible and in-sync with the latest crawl dump from CC-NEWS.</p>
+
+<p>Shukra aimed to extract enrichments from all of CC-NEWS contnet, and started with the languages for 
+which pre-trained models were available. The estimated number of documents per day were over 50k documents, and 
+there were be at least half a dozen to a dozen enrichments per document that were being generated.</p>
+
+<h1 id="newsfetch-and-the-future">NewsFetch and the future</h1>
+
+<p>We are now open-sourcing the code that was the backbone of Shukra and to make it available for the community 
+to use and build upon. This combined with Textalytics Open-Source shoudl enable one to build various applications 
+that harness News for insights and data.</p>
+
+<h1 id="cloudcosmos">CloudCosmos</h1>
+
+<p>You can find the more information about CloudCosmos at <a href="https://cloudcosmos.tech/">https://cloudcosmos.tech/</a></p>
+
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://github.com/newsfetch/newsfetch" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 NewsFetch. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

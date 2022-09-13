@@ -1,0 +1,554 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Extracting News From CommonCrawl -</title>
+<meta name="description" content="Extracting and processing News data from CommonCrawl">
+
+
+  <meta name="author" content="Manoj Bharadwaj">
+  
+  <meta property="article:author" content="Manoj Bharadwaj">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Extracting News From CommonCrawl">
+<meta property="og:url" content="https://newsfetch.tech/docs/extracting-news-commoncrawl/">
+
+
+  <meta property="og:description" content="Extracting and processing News data from CommonCrawl">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-12T20:40:42-04:00">
+
+
+
+  <meta property="article:modified_time" content="2022-09-11T10:48:05-04:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://newsfetch.tech/docs/extracting-news-commoncrawl/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "NewsFetch",
+      "url": "https://newsfetch.tech/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.png" />
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/newsfetch_logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/building-news-apps-with-newsfetch/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/newsfetch/newsfetch">github/newsfetch</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Getting Started</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">News Extraction</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/extracting-news-commoncrawl/" class="active">Extracting News From CommonCrawl</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Enrichments</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/enriching-news/">Enriching News Content</a></li>
+          
+            <li><a href="/docs/spacy/">Spacy</a></li>
+          
+            <li><a href="/docs/hugging-face/">HuggingFace Transformers</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">API</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/api/">API</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Possibilities</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/app-ideas-newsfetch/">Ideas For Using NewsFetch</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Meta</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/docs/contributing/">Contributing</a></li>
+          
+            <li><a href="/docs/license/">License</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Extracting News From CommonCrawl">
+    <meta itemprop="description" content="Extracting and processing News data from CommonCrawl">
+    <meta itemprop="datePublished" content="2022-09-12T20:40:42-04:00">
+    <meta itemprop="dateModified" content="2022-09-11T10:48:05-04:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Extracting News From CommonCrawl
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a></li><li><a href="#common-crawl-news-dataset">Common Crawl News Dataset</a></li><li><a href="#newsfetch-scripts">NewsFetch Scripts</a><ul><li><a href="#installation">Installation</a></li><li><a href="#fetching-latest-warc-file-from-commoncrawl-s3-bucket">Fetching latest WARC file from CommonCrawl S3 bucket</a></li><li><a href="#extracting-content-from-warc-file">Extracting content from WARC file</a></li><li><a href="#processing-extracted-article-with-newsplease">Processing extracted article with NewsPlease</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction">Introduction</h1>
+
+<p>CommonCrawl is a non-profit organization that provides a free and open repository of web crawl data. 
+It is a great source of data for NewsFetch.</p>
+
+<p>Let us go over the process of using NewsFetch to extract News data from CommonCrawl.
+The extracted data is further processed with NewsPlease.</p>
+
+<h1 id="common-crawl-news-dataset">Common Crawl News Dataset</h1>
+
+<p>CommonCrawl News data is avaialble in an AWS S3 bucket. The details are <a href="https://commoncrawl.org/2016/10/news-dataset-available/">here</a>.</p>
+
+<p>The data is available as a compressed WARC file. WARC is a file format for storing web crawl data.</p>
+
+<p>NewsFetch provides command line scripts to extract News data from CommonCrawl. 
+The script is available in the <a href="https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl">newsfetch-common-crawl</a> sub-project.</p>
+
+<h1 id="newsfetch-scripts">NewsFetch Scripts</h1>
+
+<h2 id="installation">Installation</h2>
+
+<p>Navigate to the sub-project root directory and follow the installation instructions from the <a href="01-quick-start-guide.md">Quick Start Guide</a>.</p>
+
+<h2 id="fetching-latest-warc-file-from-commoncrawl-s3-bucket">Fetching latest WARC file from CommonCrawl S3 bucket</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">get_latest_warc.sh</code> (https://github.com/NewsFetch/NewsFetch/blob/main/newsfetch-common-crawl/get_latest_warc.sh) script is used to fetch the latest WARC file from CommonCrawl S3 bucket.</p>
+
+<p>The configuration for the destination directory where the WARC file will be downloaded can be specified 
+with the <code class="language-plaintext highlighter-rouge">COMMON_CRAWL_DATA_DIR</code> environment variable. The default value is <code class="language-plaintext highlighter-rouge">./commoncrawl-data</code></p>
+
+<pre><code class="language-.env">COMMON_CRAWL_DATA_DIR="./commoncrawl-data"
+</code></pre>
+
+<p>This script will download the latest WARC file to the <code class="language-plaintext highlighter-rouge">COMMON_CRAWL_DATA_DIR</code> directory.</p>
+
+<p>The file name will be in the following format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CC-NEWS-&lt;YYYYMMDDHHMMSS&gt;-&lt;RANDOM&gt;.warc.gz
+</code></pre></div></div>
+
+<p>The file is approximately 1GB in size.</p>
+
+<p>At the end of the script, the WARC file name and the destination path will be printed to the console.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"warc_file_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CC-NEWS-20210911100000-00010.warc.gz"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"destination_file"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./commoncrawl-data/CC-NEWS-20210911100000-00010.warc.gz"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"took"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The structure of the directory will be along the lines of:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">├── commoncrawl-data
+|  ├── CC-NEWS-20210911100000-00010.warc.gz
+</span></code></pre></div></div>
+
+<h2 id="extracting-content-from-warc-file">Extracting content from WARC file</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">extract_warc.sh</code> (https://github.com/NewsFetch/NewsFetch/blob/main/newsfetch-common-crawl/extract_warc.sh) script is used to extract content from the WARC file.</p>
+
+<p>A command line argument, pointing to the WARC file to be processed, needs to be specified as well.
+Remember that the output of the first script has the path to the destination file. The value from the <code class="language-plaintext highlighter-rouge">destination_file</code> field can be used here.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--warc-file-path &lt;path to WARC file&gt;
+</code></pre></div></div>
+
+<p>Example invocation:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">./extract_warc.sh --warc-file-path ./commoncrawl-data/CC-NEWS-20210911100000-00010.warc.gz
+</span></code></pre></div></div>
+
+<p>The configuration for the destination folder where the processed articles from the WARC file will be stored can be 
+changed by providing the <code class="language-plaintext highlighter-rouge">WARC_EXTRACT_DIR</code> environment variable. The default value for this variable is <code class="language-plaintext highlighter-rouge">warc-extract</code>.</p>
+
+<pre><code class="language-.env">WARC_EXTRACT_DIR = "warc-extract"
+</code></pre>
+
+<p>The script will first uncompress the WARC file, and then create a sub-directory with the name of the WARC file (without extension). Within this sub-directory, it will create another sub-directory using the name provided in <code class="language-plaintext highlighter-rouge">WARC_EXTRACT_DIR</code> variable. 
+Now, as it processed the WARC file, it will create a sub-directory within <code class="language-plaintext highlighter-rouge">WARC_EXTRACT_DIR</code> for each unique web domain that is present in the archive.
+Within this domain sub-directory, each article in the WARC is processed, and the processed contents are stored as JSON with the article’s unique UUID as the file name (with <code class="language-plaintext highlighter-rouge">.json</code> extension)</p>
+
+<p>A sample article, in the file <code class="language-plaintext highlighter-rouge">warc-extract/9c496b40-4344-4714-b50d-02a38b4f8028.json</code>, is shown below. The HTML content of the article is not shown for brevity.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"dataset_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9c496b40-4344-4714-b50d-02a38b4f8028"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dataset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"news-cc"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dataset_content_length"</span><span class="p">:</span><span class="w"> </span><span class="s2">"154384"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.pbs.org/newshour/nation/weather-aids-firefighters-but-threat-from-western-wildfires-persists"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"warc_sourced_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-11T23:19:04Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"warc_extracted_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-11T22:27:52Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.pbs.org"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"article_html"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[HTML content of the article]"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The structure of the directory will be along the following lines now:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">├── commoncrawl-data
+|  ├── CC-NEWS-20210911100000-00010.warc.gz
+|  ├── CC-NEWS-20210911100000-00010
+|  |  ├── warc-extract
+|  |  |  ├── www.pbs.org
+|  |  |  |  |── 9c496b40-4344-4714-b50d-02a38b4f8028.json
+|  |  |  |  |── a86d7283-8bd9-4afe-8fa9-798e4dbb2966.json
+|  |  |  ├── www.1news.co.nz
+|  |  |  |  |── 01e5e008-3a39-43a0-a458-daa500782f97.json
+</span></code></pre></div></div>
+
+<h2 id="processing-extracted-article-with-newsplease">Processing extracted article with NewsPlease</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">process_extracted_warc_files.sh</code> (https://github.com/NewsFetch/NewsFetch/blob/main/newsfetch-common-crawl/process_extracted_warc_files.sh) script is used to process the articles with NewsPlease.</p>
+
+<p>A command line argument, pointing to the WARC file to be processed, needs to be specified as well:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--warc-file-path &lt;path to WARC file&gt;
+</code></pre></div></div>
+
+<p>Example invocation:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">./process_extracted_warc_files.sh --warc-file-path ./commoncrawl-data/CC-NEWS-20210911100000-00010.warc.gz
+</span></code></pre></div></div>
+
+<p>The configuration for the destination folder where the processed articles from the WARC file will be stored can be
+changed by providing the <code class="language-plaintext highlighter-rouge">PROCESSED_CONTENT_DIR</code> environment variable. The default value for this variable is <code class="language-plaintext highlighter-rouge">processed-content</code>.</p>
+
+<pre><code class="language-.env">PROCESSED_CONTENT_DIR = "processed-content"
+</code></pre>
+<p>The script runs through each extracted article in <code class="language-plaintext highlighter-rouge">warc-extract</code> directory, and processes it with NewsPlease. The processed output is stored in 
+a similar directory structure as the <code class="language-plaintext highlighter-rouge">warc-extract</code> directory, but in a sub-directory created with the name supplied in the
+environment variable <code class="language-plaintext highlighter-rouge">PROCESSED_CONTENT_DIR</code>.</p>
+
+<p>A sample processed article, in the file <code class="language-plaintext highlighter-rouge">processed-content/9c496b40-4344-4714-b50d-02a38b4f8028.json</code>, is shown below.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.pbs.org/newshour/nation/weather-aids-firefighters-but-threat-from-western-wildfires-persists"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weather aids firefighters, but threat from Western wildfires persists"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"authors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"Associated Press"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FORESTHILL, Calif. (AP) </span><span class="se">\u</span><span class="s2">2014 Firefighters made progress against a huge Northern California wildfire that was still growing and threatening thousands of mountain homes, while crews also battled major blazes Sunday in Oregon and Washington.</span><span class="se">\n</span><span class="s2">The Mosquito Fire in foothills east of Sacramento spread to nearly 65 square miles (168 square kilometers), with 10% containment, according to the California Department of Forestry and Fire Protection, or Cal Fire.</span><span class="se">\n\u</span><span class="s2">201cCooler temperatures and higher humidity assisted with moderating some fire activity,</span><span class="se">\u</span><span class="s2">201d but higher winds allowed the flames to push to the north and northeast, according to a Cal Fire incident report Sunday.</span><span class="se">\n</span><span class="s2">More than 5,800 structures in Placer and El Dorado counties were under threat and some 11,000 residents of communities including Foresthill and Georgetown were under evacuation orders.</span><span class="se">\n</span><span class="s2">In Southern California, cooler temperatures and rain brought respite to firefighters battling the massive Fairview Fire about 75 miles (121 kilometers) southeast of Los Angeles after sweltering heat last week.</span><span class="se">\n</span><span class="s2">WATCH: Historic, unrelenting heat wave grips the Western US</span><span class="se">\n</span><span class="s2">The 44-square-mile (114-square-kilometer) blaze was 45% contained Sunday. The fire has destroyed at least 30 homes and other structures in Riverside County. Two people died while fleeing flames last Monday.</span><span class="se">\n</span><span class="s2">The southern part of the state welcomed the cooler weekend weather as a tropical storm veered off the Pacific Coast and faded, helping put an end to blistering temperatures that nearly overwhelmed the state</span><span class="se">\u</span><span class="s2">2019s electrical grid.</span><span class="se">\n</span><span class="s2">Thunderstorms and the risk of flooding persisted in mountainous areas of greater Los Angeles on Sunday. But after Hurricane Kay made landfall in Mexico last week it quickly was downgraded and weakened further until it largely disappeared, forecasters said.</span><span class="se">\n</span><span class="s2">In Washington state, a raging wildfire sparked Saturday in the remote Stevens Pass area sent hikers fleeing and forced evacuations of mountain communities. There was no containment Sunday of the Bolt Creek Fire, which had scorched nearly 12 square miles (31 square kilometers) of forestland east of Seattle.</span><span class="se">\n\u</span><span class="s2">201cIt</span><span class="se">\u</span><span class="s2">2019s going to be several days</span><span class="se">\u</span><span class="s2">201d before crews get a handle on the blaze, Peter Mongillo, spokesperson for Snohomish Regional Fire and Rescue, told the Seattle Times.</span><span class="se">\n</span><span class="s2">California</span><span class="se">\u</span><span class="s2">2019s Mosquito Fire has covered a large portion of the Northern Sierra region with smoke. California health officials urged people in affected areas to stay indoors where possible. Organizers of the Tour de Tahoe canceled the annual 72-mile (115-km) bicycle ride scheduled Sunday around Lake Tahoe because of the heavy smoke from the blaze </span><span class="se">\u</span><span class="s2">2014 more than 50 miles (80 km) away. Last year</span><span class="se">\u</span><span class="s2">2019s ride was canceled because of smoke from another big fire south of Tahoe.</span><span class="se">\n</span><span class="s2">The Mosquito Fire</span><span class="se">\u</span><span class="s2">2019s cause remained under investigation. Pacific Gas &amp; Electric said unspecified </span><span class="se">\u</span><span class="s2">201celectrical activity</span><span class="se">\u</span><span class="s2">201d occurred close in time to the report of the fire on Tuesday.</span><span class="se">\n</span><span class="s2">Scientists say climate change has made the West warmer and drier over the last three decades and will continue to make weather more extreme and wildfires more frequent and destructive. In the last five years, California has experienced the largest and most destructive fires in state history.</span><span class="se">\n</span><span class="s2">READ MORE: California</span><span class="se">\u</span><span class="s2">2019s </span><span class="se">\u</span><span class="s2">2018climate migrants</span><span class="se">\u</span><span class="s2">2019 and the difficulty of finding a new home</span><span class="se">\n</span><span class="s2">And the rest of the West hasn</span><span class="se">\u</span><span class="s2">2019t been immune. There were at least 18 large fires burning in Oregon and Washington, leading to evacuations and targeted power outages near Portland as the challenge of dry and windy conditions continued in the region.</span><span class="se">\n</span><span class="s2">Sprawling areas of western Oregon choked by thick smoke from the fires in recent days were expected to see improved air quality on Sunday thanks to a returning onshore flow, Oregon Public Broadcasting reported.</span><span class="se">\n</span><span class="s2">South of Portland, more than 3,000 residents were under new evacuation orders because of the 134-square-mile (347-square-kilometer) Cedar Creek Fire, which has burned for over a month across Lane and Deschutes counties. Firefighters were protecting remote homes in Oakridge, Westfir and surrounding mountain communities.</span><span class="se">\n</span><span class="s2">According to the Northwest Interagency Coordination Center, this weekend there were more than 400 square miles (1,035 square kilometers) of active, uncontained fires and nearly 5,000 people on the ground fighting them in the two northwestern states."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"excerpt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Firefighters made progress against a huge Northern California wildfire that was still growing and threatening thousands of mountain homes, while crews also battled major blazes Sunday in Oregon and Washington."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"content_length"</span><span class="p">:</span><span class="w"> </span><span class="mi">4328</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"published_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-20T00:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.pbs.org"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"media"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://d3i6fh83elv35t.cloudfront.net/static/2022/09/2022-09-10T045514Z_664159068_RC22EW9YJJ3C_RTRMADP_3_CALIFORNIA-HEAT-MOSQUITO-FIRE-1-1024x614.jpg"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta_info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"dataset_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9c496b40-4344-4714-b50d-02a38b4f8028"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dataset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"news-cc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dataset_content_length"</span><span class="p">:</span><span class="w"> </span><span class="s2">"154384"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"warc_sourced_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-11T23:19:04Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"warc_extracted_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-11T22:27:52Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"warc_processed_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-09-11T23:26:31Z"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The structure of the directory will be along the following lines now:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">├── commoncrawl-data
+|  ├── CC-NEWS-20210911100000-00010.warc.gz
+|  ├── CC-NEWS-20210911100000-00010
+|  |  ├── warc-extract
+|  |  |  ├── www.pbs.org
+|  |  |  |  |── 9c496b40-4344-4714-b50d-02a38b4f8028.json
+|  |  |  |  |── a86d7283-8bd9-4afe-8fa9-798e4dbb2966.json
+|  |  |  ├── www.1news.co.nz
+|  |  |  |  |── 01e5e008-3a39-43a0-a458-daa500782f97.json
+|  |  ├── processed-content
+|  |  |  ├── www.pbs.org
+|  |  |  |  |── 9c496b40-4344-4714-b50d-02a38b4f8028.json
+|  |  |  |  |── a86d7283-8bd9-4afe-8fa9-798e4dbb2966.json
+|  |  |  ├── www.1news.co.nz
+|  |  |  |  |── 01e5e008-3a39-43a0-a458-daa500782f97.json
+</span></code></pre></div></div>
+
+<p>At this point all the articles in the downloaded WARC file would have been processed.</p>
+
+<p>This data can now be used to build a search engine, or a news aggregator, or any other application that requires News data.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-09-11">September 11, 2022</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/docs/quick-start-guide/" class="pagination--pager" title="Quick-Start Guide
+">Previous</a>
+    
+    
+      <a href="/docs/enriching-news/" class="pagination--pager" title="Enriching News Content
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://github.com/newsfetch/newsfetch" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 NewsFetch. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
