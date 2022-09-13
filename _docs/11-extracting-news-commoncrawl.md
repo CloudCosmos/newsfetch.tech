@@ -16,7 +16,7 @@ The extracted data is further processed with NewsPlease.
 
 # Common Crawl News Dataset
 
-CommonCrawl News data is avaialble in an AWS S3 bucket. The details are [here](https://commoncrawl.org/2016/10/news-dataset-available/)
+CommonCrawl News data is avaialble in an AWS S3 bucket. The details are [here](https://commoncrawl.org/2016/10/news-dataset-available/).
 
 The data is available as a compressed WARC file. WARC is a file format for storing web crawl data.
 
