@@ -52,7 +52,7 @@ feature_row:
 # News: Processed, Structured, and Ready to Use 
 Billions of articles, tens of thousands of world-wide sources, multiple languages
 <br/>
-```json
+```
 {
   "url": "https://www.pbs.org/newshour/nation/weather-aids-firefighters-but-threat-from-western-wildfires-persists",
   "title": "Weather aids firefighters, but threat from Western wildfires persists",
