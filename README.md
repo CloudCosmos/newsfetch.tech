@@ -1,38 +1,25 @@
 # newsfetch.tech
 
 
-# Jekyll
+# Docusaurus 2.0
 
-## Install
-`gem install bundler jekyll`
+## Installation
 
-## First time
+First install NodeJS.
 
-`jekyll new www.newsfetch.tech`
+Then create site with Docusaurus. This needs to be done once!
+
+```bash
+npx create-docusaurus@latest newsfetch-website classic
+```
 
 ## Run
 
 `cd www.newsfetch.tech`
 
-Install dependencies
+Run dev server
 
-`bundle install`
-
-## Run Jekyll
-
-`bundle exec jekyll serve --incremental`
+`npx docusaurus start`
 
 ## Github pages
 
-Add following to Gemfile
-
-`gem "github-pages", "~> VERSION", group: :jekyll_plugins`
-
-## Updating newsfetch.tech website
-
-First get the latest version of the website
-
-`git clone git@github.com:newsfetch/newsfetch.tech.git`
-
-
-The site is hosted with Github pages and will be updated automatically.
