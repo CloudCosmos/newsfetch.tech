@@ -42,6 +42,17 @@ function HomepageHeader() {
                     </div>
                     <div className={clsx('col col--7')}>
                         <div className="text--left padding-horiz--md">
+                            <span>NewsFetch output for a </span>
+                            <a target="_blank" class="footer__link-item" rel="noopener noreferral" href="https://www.pbs.org/newshour/nation/weather-aids-firefighters-but-threat-from-western-wildfires-persists">
+                                sample news article from pbs.org
+                                <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"
+                                     className="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module">
+                                    <path fill="currentColor"
+                                          d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div className="text--left padding-horiz--md">
                             <pre className="text--primary" style={{fontSize: '12px'}}>{JSON.stringify(sample_data, null, 2) }</pre>
                         </div>
                     </div>
