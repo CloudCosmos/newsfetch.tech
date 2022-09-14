@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>NewsFetch Blog</title>
+        <link>https://newsfetch.tech/blog</link>
+        <description>NewsFetch Blog</description>
+        <lastBuildDate>Sun, 11 Sep 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://newsfetch.tech/blog/welcome</link>
+            <guid>welcome</guid>
+            <pubDate>Sun, 11 Sep 2022 00:00:00 GMT</pubDate>
+            <category>newsfetch</category>
+            <category>hello</category>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://newsfetch.tech/blog</id>
+    <title>NewsFetch Blog</title>
+    <updated>2022-09-11T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://newsfetch.tech/blog"/>
+    <subtitle>NewsFetch Blog</subtitle>
+    <icon>https://newsfetch.tech/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>welcome</id>
+        <link href="https://newsfetch.tech/blog/welcome"/>
+        <updated>2022-09-11T00:00:00.000Z</updated>
+        <author>
+            <name>Manoj Bharadwaj</name>
+            <uri>https://github.com/manoj_cloudcosmos</uri>
+        </author>
+        <category label="newsfetch" term="newsfetch"/>
+        <category label="hello" term="hello"/>
+    </entry>
+</feed>

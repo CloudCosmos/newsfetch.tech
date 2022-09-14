@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknewsfetch_website=self.webpackChunknewsfetch_website||[]).push([[653],{5746:e=>{e.exports=JSON.parse('{"label":"newsfetch","permalink":"/blog/tags/newsfetch","allTagsPath":"/blog/tags","count":1}')}}]);
