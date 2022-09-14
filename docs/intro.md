@@ -35,9 +35,9 @@ pyenv install 3.9
 
 ### Project Structure
 
-NewsFetch has various sub-projects, and others are being implemented and will be added.
-All sub-projects will be based on Python and will follow the same structure. The general installation instructions for each sub-project will be same.
-Any specific instructions for a sub-project will be mentioned in the respective sub-project's documentation.
+NewsFetch has various subprojects, and others are being implemented and will be added.
+All subprojects will be based on Python and will follow the same structure. The general installation instructions for each subproject will be same.
+Any specific instructions for a subproject will be mentioned in the respective subproject's documentation.
 
 - [NewsFetch Core](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-core) - Core library for NewsFetch
 - [NewsFetch Common Crawl](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl) - Common Crawl related tools
@@ -45,9 +45,9 @@ Any specific instructions for a sub-project will be mentioned in the respective 
 
 ### Installation
 
-All NewsFetch sub-projects use Poerty for managing dependencies.
+All NewsFetch subprojects use Poetry for managing dependencies.
 
-To get started, first navigate to the sub-module directory. Now create a virtual environment and activate it.
+To get started, first navigate to the submodule directory. Now create a virtual environment and activate it.
 
 ```bash
 python -m venv venv

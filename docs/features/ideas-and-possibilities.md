@@ -2,7 +2,7 @@
 
 ## What can you do with NewsFetch?
 
-NewsFetch can be used to build a variety of applications. Some of the ideas are listed below:
+NewsFetch can be used to build a variety of applications. Some ideas are listed below:
 
 - News Aggregator
 - Real Time News

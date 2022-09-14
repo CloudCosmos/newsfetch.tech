@@ -10,18 +10,18 @@ The extracted data is further processed with NewsPlease.
 
 ## Common Crawl News Dataset
 
-CommonCrawl News data is avaialble in an AWS S3 bucket. The details are [here](https://commoncrawl.org/2016/10/news-dataset-available/).
+CommonCrawl News data is available in an AWS S3 bucket. The details are [here](https://commoncrawl.org/2016/10/news-dataset-available/).
 
 The data is available as a compressed WARC file. WARC is a file format for storing web crawl data.
 
 NewsFetch provides command line scripts to extract News data from CommonCrawl.
-The script is available in the [newsfetch-common-crawl](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl) sub-project.
+The script is available in the [newsfetch-common-crawl](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl) subproject.
 
 # NewsFetch Scripts
 
 ## Installation
 
-Navigate to the sub-project root directory and follow the installation instructions from the [Quick Start Guide](../intro.md).
+Navigate to the subproject root directory and follow the installation instructions from the [Quick Start Guide](../intro.md).
 
 ## Fetching latest WARC file from CommonCrawl S3 bucket
 
@@ -85,9 +85,9 @@ changed by providing the `WARC_EXTRACT_DIR` environment variable. The default va
 WARC_EXTRACT_DIR = "warc-extract"
 ```
 
-The script will first uncompress the WARC file, and then create a sub-directory with the name of the WARC file (without extension). Within this sub-directory, it will create another sub-directory using the name provided in `WARC_EXTRACT_DIR` variable.
-Now, as it processed the WARC file, it will create a sub-directory within `WARC_EXTRACT_DIR` for each unique web domain that is present in the archive.
-Within this domain sub-directory, each article in the WARC is processed, and the processed contents are stored as JSON with the article's unique UUID as the file name (with `.json` extension)
+The script will first uncompress the WARC file, and then create a subdirectory with the name of the WARC file (without extension). Within this subdirectory, it will create another subdirectory using the name provided in `WARC_EXTRACT_DIR` variable.
+Now, as it processed the WARC file, it will create a subdirectory within `WARC_EXTRACT_DIR` for each unique web domain that is present in the archive.
+Within this domain subdirectory, each article in the WARC is processed, and the processed contents are stored as JSON with the article's unique UUID as the file name (with `.json` extension)
 
 A sample article, in the file `warc-extract/9c496b40-4344-4714-b50d-02a38b4f8028.json`, is shown below. The HTML content of the article is not shown for brevity.
 ```json
@@ -140,7 +140,7 @@ changed by providing the `PROCESSED_CONTENT_DIR` environment variable. The defau
 PROCESSED_CONTENT_DIR = "processed-content"
 ```
 The script runs through each extracted article in `warc-extract` directory, and processes it with NewsPlease. The processed output is stored in
-a similar directory structure as the `warc-extract` directory, but in a sub-directory created with the name supplied in the
+a similar directory structure as the `warc-extract` directory, but in a subdirectory created with the name supplied in the
 environment variable `PROCESSED_CONTENT_DIR`.
 
 A sample processed article, in the file `processed-content/9c496b40-4344-4714-b50d-02a38b4f8028.json`, is shown below.

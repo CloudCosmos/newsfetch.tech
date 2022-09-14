@@ -44,7 +44,7 @@ function HomepageHeader() {
                         <div className="text--left padding-horiz--md">
                             <span>NewsFetch output for a </span>
                             <a target="_blank" class="footer__link-item" rel="noopener noreferral" href="https://www.pbs.org/newshour/nation/weather-aids-firefighters-but-threat-from-western-wildfires-persists">
-                                sample news article from pbs.org
+                                <span>sample news article from pbs.org </span>
                                 <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"
                                      className="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module">
                                     <path fill="currentColor"
