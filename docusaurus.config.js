@@ -62,6 +62,11 @@ const config = {
             label: 'Documentation',
           },
           {
+            to: '/docs/features/api',
+            label: 'Sample API',
+            position: 'left'
+          },
+          {
             to: '/blog',
             label: 'Blog',
             position: 'left'
@@ -101,8 +106,12 @@ const config = {
                 href: '/docs/license',
               },
               {
-                label: 'API',
+                label: 'Sample API ',
                 href: '/docs/features/api',
+              },
+              {
+                label: 'Sample API (Deployed)',
+                href: 'https://api.newsfetch.tech/docs',
               },
             ],
           },
