@@ -17,7 +17,11 @@ The data is available as a compressed WARC file. WARC is a file format for stori
 NewsFetch provides command line scripts to extract News data from CommonCrawl.
 The script is available in the [newsfetch-common-crawl](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl) subproject.
 
-# NewsFetch Scripts
+# Docker images
+
+To use Docker images refer to the [Docker](docker.md) page.
+
+# Using NewsFetch scripts natively
 
 ## Installation
 
