@@ -33,6 +33,21 @@ This will start the API on `http://localhost:8000`.
 
 The endpoints are documented with OpenAPI and can be accessed at `http://localhost:8000/docs`.
 
+To populate the database with sample data, run the following command.
+
+```bash
+python ingest_data.py
+```
+
+This will ingest data from the directory specified in the environment variable
+SOURCE_FOLDER to the database via the API. The API endpoint is specified in the
+environment variable API_ENDPOINT.
+
+The data being ingested is expected to have the valid format that has been defined in the APIs datamodel.
+The datamodel can be found in the file `newsfetch-api/core/db_models.py`.
+The wire format of the data is defined in the file `newsfetch-core/api_schemas.py`.
+
+
 ## Docker
 
 

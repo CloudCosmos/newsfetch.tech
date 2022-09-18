@@ -10,6 +10,12 @@ The NewsFetch Common Crawl image is available on Docker Hub at [newsfetch/newsfe
 
 To use the NewsFetch Common Crawl image, you will need to have Docker installed on your system. Docker can be downloaded from [here](https://www.docker.com/products/docker-desktop).
 
+Now you can pull the image using the following command:
+
+```bash
+docker pull newsfetch/newsfetch-common-crawl
+```
+
 ### Fetch the latest Common Crawl data
 
 It is assumed that there is a directory named `commoncrawl-data` in the current directory.
@@ -46,4 +52,24 @@ Finally, process the extracted news articles.
 
 ```bash
 docker run -e COMMON_CRAWL_DATA_DIR=/data -v $(pwd)/commoncrawl-data:/data -it --name newsfetch-process-warc newsfetch/newsfetch-common-crawl sh ./process_extracted_warc_files.sh /data/CC-NEWS-20220915230049-00936.warc.gz
+```
+
+## NewsFetch Sample API
+
+The NewsFetch sample API image is available on Docker Hub at [newsfetch/newsfetch-api](https://hub.docker.com/r/newsfetch/newsfetch-api).
+
+### Usage
+
+Now you can pull the image using the following command:
+
+```bash
+docker pull newsfetch/newsfetch-api
+```
+
+### Run the API
+
+Run the API using the following command:
+
+```bash
+docker run -p 8000:8000 -it --name newsfetch-api newsfetch/newsfetch-api
 ```

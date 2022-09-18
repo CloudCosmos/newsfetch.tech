@@ -42,6 +42,7 @@ Any specific instructions for a subproject will be mentioned in the respective s
 - [NewsFetch Core](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-core) - Core library for NewsFetch
 - [NewsFetch Common Crawl](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-common-crawl) - Common Crawl related tools
 - [NewsFetch Api](https://github.com/NewsFetch/NewsFetch/tree/main/newsfetch-api) - Example API based on FastAPI
+- [Sample Data](https://github.com/NewsFetch/NewsFetch/tree/main/sample-data) - Sample data
 
 ### Installation
 
