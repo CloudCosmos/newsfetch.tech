@@ -1,6 +1,6 @@
 ---
-slug: welcome
-title: Welcome
+slug: announcing-newsfetch
+title: Announcing NewsFetch
 authors: [manoj]
 tags: [newsfetch, hello, news, ml, nlp]
 ---
