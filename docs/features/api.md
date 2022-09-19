@@ -2,6 +2,17 @@
 
 To demonstrate the usage of NewsFetch, we have created a simple API using FastAPI.
 
+
+:::tip Try It Out!!
+
+The API is deployed on Render and can be accessed at [https://api.newsfetch.tech/docs](https://api.newsfetch.tech/docs).
+
+:::
+
+## Docker
+
+To use Docker images refer to the [Docker](docker.md) page.
+
 ## Local Development
 
 ### Installation
@@ -48,9 +59,3 @@ The datamodel can be found in the file `newsfetch-api/core/db_models.py`.
 The wire format of the data is defined in the file `newsfetch-core/api_schemas.py`.
 
 
-## Docker
-
-
-## Sample Deployment
-
-The API is deployed on Render and can be accessed at [https://api.newsfetch.tech/docs](https://api.newsfetch.tech/docs).
