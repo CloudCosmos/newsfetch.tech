@@ -1,7 +1,7 @@
 ---
 sidebar_position: 81
 ---
-# Why NewsFetch?
+# NewsFetch - A Brief History
 
 CloudCosmos has been exploring News content for a while now! We have worked with clients in building large
 scale search engines for News, setting up data ingestion pipelines to rapidly consume massive volumes of News
