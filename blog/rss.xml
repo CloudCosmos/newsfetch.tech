@@ -9,9 +9,9 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://newsfetch.tech/blog/welcome</link>
-            <guid>welcome</guid>
+            <title><![CDATA[Announcing NewsFetch]]></title>
+            <link>https://newsfetch.tech/blog/announcing-newsfetch</link>
+            <guid>announcing-newsfetch</guid>
             <pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[NewsFetch is an open-source project that will strive to provide tools that enable harnessing News data.]]></description>
             <content:encoded><![CDATA[<p>NewsFetch is an open-source project that will strive to provide tools that enable harnessing News data.</p><p>It builds on top of years of experience the team at CloudCosmos has with datasets like News, and on the work that was behind
