@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>NewsFetch Blog</title>
         <link>https://newsfetch.tech/blog</link>
         <description>NewsFetch Blog</description>
-        <lastBuildDate>Sun, 11 Sep 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Sep 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,18 @@
             <title><![CDATA[Welcome]]></title>
             <link>https://newsfetch.tech/blog/welcome</link>
             <guid>welcome</guid>
-            <pubDate>Sun, 11 Sep 2022 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[NewsFetch is an open-source project that will strive to provide tools that enable harnessing News data.]]></description>
+            <content:encoded><![CDATA[<p>NewsFetch is an open-source project that will strive to provide tools that enable harnessing News data.</p><p>It builds on top of years of experience the team at CloudCosmos has with datasets like News, and on the work that was behind
+a few products that CloudCosmos had built in the general areas of ingesting and enriching large datasets. This history, for anyone
+curious, is documented <a href="https://newsfetch.tech/docs/newsfetch-history" target="_blank" rel="noopener noreferrer">here</a>.</p><p>News is one of the widely consumed and researched dataset. NewsFetch builds on top of other phenomenal open source projects:</p><ul><li><a href="https://commoncrawl.org" target="_blank" rel="noopener noreferrer">CommonCrawl - https://commoncrawl.org</a><ul><li>More specifically <!-- -->[CommonCrawl News Dataset]<!-- --> (<a href="https://commoncrawl.org/2016/10/news-dataset-available/" target="_blank" rel="noopener noreferrer">https://commoncrawl.org/2016/10/news-dataset-available/</a>)</li></ul></li><li><a href="https://github.com/fhamborg/news-please" target="_blank" rel="noopener noreferrer">NewsPlease</a></li><li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">FastAPI</a></li><li><a href="https://spacy.io/" target="_blank" rel="noopener noreferrer">Spacy</a></li><li><a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">HuggingFace</a></li><li>Python</li><li>Postgres / SQLite</li><li>OpenSearch</li></ul><p>... and many other libraries and pre-built machine learning models in NLP, NLP and text processing space.</p><h1>Project details</h1><p>We started working on this project, basically taking out parts from the various CloudCosmos product efforts, and getting
+them into the open-source project, over the September 2022 Labor Day (US long holiday weekend), and have been continuing
+the work over the wekeends. We got to a stage after this weekend's effort, where an initial version could be published.</p><p>The project is hosted at <a href="https://github.com/newsfetch/newsfetch" target="_blank" rel="noopener noreferrer">Github/NewsFetch</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-available">What is available?<a class="hash-link" href="#what-is-available" title="Direct link to heading">​</a></h2><ul><li>A standardized data model for processed news content</li><li>A data processing pipeline to:<ul><li>Fetching data from CommonCrawl, which is in WARC archive format</li><li>Extracting the article content from the WARC archive</li><li>Processing the article HTML to extract content to the standardized format</li></ul></li><li>Lots of documentation</li><li>Dockerfile for the pipeline mentioned</li><li>A sample API that shows what can be done with data</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-coming">What is coming?<a class="hash-link" href="#what-is-coming" title="Direct link to heading">​</a></h2><ul><li>Text enrichments<ul><li>Standardized flow that will apply enrichments using pre-build machine-learning models from Spacy/HuggingFace etc</li><li>Named entity recognition, Summarization, Topic detection etc</li><li>Reading difficult level metrics</li><li>Generative question answering</li></ul></li><li>Sample apps to showcase:<ul><li>News analytics</li><li>Alerting</li><li>Podcast creation for "happening" news</li><li>Social media signal detection</li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="any-feature-requests">Any feature requests?<a class="hash-link" href="#any-feature-requests" title="Direct link to heading">​</a></h2><p>If you see something missing in the above, and would like for us to consider building it, please contact us.</p>]]></content:encoded>
             <category>newsfetch</category>
             <category>hello</category>
+            <category>news</category>
+            <category>ml</category>
+            <category>nlp</category>
         </item>
     </channel>
 </rss>
