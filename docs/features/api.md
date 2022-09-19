@@ -1,3 +1,7 @@
+---
+sidebar_position: 55
+---
+
 # API
 
 To demonstrate the usage of NewsFetch, we have created a simple API using FastAPI.

@@ -1,3 +1,7 @@
+---
+sidebar_position: 54
+---
+
 # Sample Data
 
 Sample data is available in the repository. It is located in the folder `sample-data` under the root directory of the repository.

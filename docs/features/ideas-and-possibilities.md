@@ -1,3 +1,7 @@
+---
+sidebar_position: 57
+---
+
 # NewsFetch - Ideas and Possibilities
 
 ## What can you do with NewsFetch?

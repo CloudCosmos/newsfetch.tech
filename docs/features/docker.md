@@ -1,3 +1,7 @@
+---
+sidebar_position: 53
+---
+
 # Docker images
 
 To enable easy deployment of NewsFetch, we have created Docker images for the various components of NewsFetch.
