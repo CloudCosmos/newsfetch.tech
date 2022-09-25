@@ -4,10 +4,16 @@
         <title>NewsFetch Blog</title>
         <link>https://newsfetch.tech/blog</link>
         <description>NewsFetch Blog</description>
-        <lastBuildDate>Sun, 18 Sep 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Sep 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[enrichments]]></title>
+            <link>https://newsfetch.tech/blog/2022/09/25/enrichments</link>
+            <guid>/2022/09/25/enrichments</guid>
+            <pubDate>Sun, 25 Sep 2022 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Announcing NewsFetch]]></title>
             <link>https://newsfetch.tech/blog/announcing-newsfetch</link>
