@@ -52,7 +52,7 @@ NewsFetch provides a standardized interface to summarization models from [Huggin
 Topic modelling is the process of identifying topics in a text document. The topics are identified by the words that are
 most relevant to the topic. 
 
-NewsFetch provides a standardized interface to topic modelling models from [HuggingFace](https://huggingface.co/models?pipeline_tag=topic-modeling).
+NewsFetch provides a standardized interface to topic-modelling models from [HuggingFace](https://huggingface.co/models?pipeline_tag=topic-modeling).
 
 ## Question Answering
 
@@ -75,7 +75,10 @@ document can be a paragraph, or a document. Further the label can be a single la
 
 NewsFetch provides a standardized interface to classification models from [HuggingFace](https://huggingface.co/models?pipeline_tag=text-classification).
 
-# Enrichment Process
+# Enrichment Processing
+
+A sample script that shows how to generate enrichments for News data is available in the [NewsFetch Enrichments repository](https://github.com/NewsFetch/NewsFetch/blob/main/newsfetch-enrichers/run_enrichers.py). We also have a new Docker image that can be used to run the enrichment process. 
+
 
 
 
