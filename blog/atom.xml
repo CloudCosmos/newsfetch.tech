@@ -8,10 +8,29 @@
     <subtitle>NewsFetch Blog</subtitle>
     <icon>https://newsfetch.tech/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[enrichments]]></title>
-        <id>/2022/09/25/enrichments</id>
-        <link href="https://newsfetch.tech/blog/2022/09/25/enrichments"/>
+        <title type="html"><![CDATA[News Data Enrichments]]></title>
+        <id>enrichments</id>
+        <link href="https://newsfetch.tech/blog/enrichments"/>
         <updated>2022-09-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NewFetch now provides libraries to run various enrichments to the News data that has been processed from CommonCrawl,]]></summary>
+        <content type="html"><![CDATA[<p>NewFetch now provides libraries to run various enrichments to the News data that has been processed from CommonCrawl,
+well, technically not limited to CommonCrawl, but that is the source of data we have been talking about.</p><p>The enrichments are provided as a library, and can be used in any Python application. </p><p>More details are available in the <a href="https://newsfetch.tech/docs/features/enriched-news" target="_blank" rel="noopener noreferrer">NewsFetch Enrichments documentation</a>.</p>]]></content>
+        <author>
+            <name>Manoj Bharadwaj</name>
+            <uri>https://github.com/manoj_cloudcosmos</uri>
+        </author>
+        <category label="newsfetch" term="newsfetch"/>
+        <category label="enrichments" term="enrichments"/>
+        <category label="news" term="news"/>
+        <category label="ml" term="ml"/>
+        <category label="nlp" term="nlp"/>
+        <category label="spacy" term="spacy"/>
+        <category label="transformers" term="transformers"/>
+        <category label="huggingface" term="huggingface"/>
+        <category label="ner" term="ner"/>
+        <category label="summarization" term="summarization"/>
+        <category label="topic detection" term="topic detection"/>
+        <category label="question-answering" term="question-answering"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Announcing NewsFetch]]></title>

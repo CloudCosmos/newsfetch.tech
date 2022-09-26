@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknewsfetch_website=self.webpackChunknewsfetch_website||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"enrichments","permalink":"/blog/2022/09/25/enrichments"},{"title":"Announcing NewsFetch","permalink":"/blog/announcing-newsfetch"}]}')}}]);

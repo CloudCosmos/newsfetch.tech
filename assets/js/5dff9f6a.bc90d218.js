@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknewsfetch_website=self.webpackChunknewsfetch_website||[]).push([[1302],{171:e=>{e.exports=JSON.parse('{"label":"spacy","permalink":"/blog/tags/spacy","allTagsPath":"/blog/tags","count":1}')}}]);

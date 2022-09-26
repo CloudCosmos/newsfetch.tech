@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknewsfetch_website=self.webpackChunknewsfetch_website||[]).push([[5870],{2144:e=>{e.exports=JSON.parse('{"label":"question-answering","permalink":"/blog/tags/question-answering","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -9,10 +9,25 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[enrichments]]></title>
-            <link>https://newsfetch.tech/blog/2022/09/25/enrichments</link>
-            <guid>/2022/09/25/enrichments</guid>
+            <title><![CDATA[News Data Enrichments]]></title>
+            <link>https://newsfetch.tech/blog/enrichments</link>
+            <guid>enrichments</guid>
             <pubDate>Sun, 25 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[NewFetch now provides libraries to run various enrichments to the News data that has been processed from CommonCrawl,]]></description>
+            <content:encoded><![CDATA[<p>NewFetch now provides libraries to run various enrichments to the News data that has been processed from CommonCrawl,
+well, technically not limited to CommonCrawl, but that is the source of data we have been talking about.</p><p>The enrichments are provided as a library, and can be used in any Python application. </p><p>More details are available in the <a href="https://newsfetch.tech/docs/features/enriched-news" target="_blank" rel="noopener noreferrer">NewsFetch Enrichments documentation</a>.</p>]]></content:encoded>
+            <category>newsfetch</category>
+            <category>enrichments</category>
+            <category>news</category>
+            <category>ml</category>
+            <category>nlp</category>
+            <category>spacy</category>
+            <category>transformers</category>
+            <category>huggingface</category>
+            <category>ner</category>
+            <category>summarization</category>
+            <category>topic detection</category>
+            <category>question-answering</category>
         </item>
         <item>
             <title><![CDATA[Announcing NewsFetch]]></title>
